@@ -170,10 +170,6 @@ async def claimstw(ctx):
         await ctx.send(f"claimed stw daily login reward")
 
 @bot.command()
-async def id(ctx):
-  await ctx.send(ctx.message.author.id)
-
-@bot.command()
 async def shopselections(ctx):
     with open(f"./accounts/{ctx.author}.json") as f:
         l = json.load(f)
